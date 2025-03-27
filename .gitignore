@@ -1,1 +1,20 @@
+# 编译产物
+*.class
+*.exe
+*.dll
+*.so
+
+# 日志文件
+*.log
+*.tmp
+
+# 依赖目录
+node_modules/
+vendor/
+dist/
+build/
+
+# IDE 文件
+.vscode/
 .idea/
+*.swp
