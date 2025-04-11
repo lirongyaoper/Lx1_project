@@ -16,8 +16,8 @@ format_duration() {
 
 
 group_one() {
-  echo "预处理命令开始执行 "
-  nnUNetv2_plan_and_preprocess -d 001 -c 2d 3d_fullres 3d_lownes -np 20 12 20 -pl nnUNetPlannerResEncL --verify_dataset_integrity #内存不足
+  echo "预处理命令开始执行"
+#  nnUNetv2_plan_and_preprocess -d 001 -c 2d 3d_fullres 3d_lownes -np 20 12 20 -pl nnUNetPlannerResEncL --verify_dataset_integrity #内存不足
   nnUNetv2_plan_and_preprocess -d 001 -c 2d 3d_fullres 3d_lownes -pl nnUNetPlannerResEncL --verify_dataset_integrity
   echo "预处理完成"
 }
