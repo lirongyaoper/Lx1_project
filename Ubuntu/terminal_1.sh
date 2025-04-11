@@ -17,7 +17,8 @@ format_duration() {
 
 group_one() {
   echo "预处理命令开始执行"
-  Netv2_plan_and_preprocess -d OO1 -c 2d 3d_fullres 3d_lownes -np 20 8 20 -pl nnUNetPlannerResEncl --verify_dataset_integrity
+  nnUNetv2_plan_and_preprocess -d 001 -c 2d 3d_fullres 3d_lownes -np 20 12 20 -pl nnUNetPlannerResEncL --verify_dataset_integrity
+  nnUNetv2_plan_and_preprocess -d 001 -c 2d 3d_fullres 3d_lownes -pl nnUNetPlannerResEncL --verify_dataset_integrity
   echo "预处理完成"
 }
 
