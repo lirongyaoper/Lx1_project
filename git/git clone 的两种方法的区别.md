@@ -92,3 +92,8 @@ git remote set-url origin git@github.com:user/repo.git
 --- 
 
 掌握这两种方法的区别后，可以根据实际需求灵活选择克隆方式！
+```bash
+alias gitpp='cd /home/lirongyaoper/Projects/Python01/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlp='cd /home/lirongyaoper/Projects/Linux/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+```
+
