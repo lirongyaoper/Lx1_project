@@ -95,5 +95,12 @@ git remote set-url origin git@github.com:user/repo.git
 ```bash
 alias gitpp='cd /home/lirongyaoper/Projects/Python01/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitlp='cd /home/lirongyaoper/Projects/Linux/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+
+
+alias gitps='cd /home/lirongyaoper/Projects/Python01/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitls='cd /home/lirongyaoper/Projects/Linux/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitpl='cd /home/lirongyaoper/Projects/Python01/ &&  git pull'
+alias gitll='cd /home/lirongyaoper/Projects/Linux/ &&  git pull '
+
 ```
 
