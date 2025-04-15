@@ -100,7 +100,10 @@ alias gitlp='cd /home/lirongyaoper/Projects/Linux/ &&  git add . && git commit -
 alias gitps='cd /home/lirongyaoper/Projects/Python01/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitls='cd /home/lirongyaoper/Projects/Linux/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitpl='cd /home/lirongyaoper/Projects/Python01/ &&  git pull'
-alias gitll='cd /home/lirongyaoper/Projects/Linux/ &&  git pull '
+alias gitll='cd /home/lirongyaoper/Projects/Linux/ &&  git pull'
+alias gitcp='cd /home/lirongyaoper/Projects && rm -rf ./Python01 &&  git clone git@github.com:lirongyaoper/Python01.git'
+alias gitcl='cd /home/lirongyaoper/Projects && rm -rf ./Linux &&  git clone git@github.com:lirongyaoper/Linux.git'
+
 
 ```
 
