@@ -47,7 +47,7 @@
 ### 6. **记录整个Tmux会话**
    启动tmux时自动开始记录：
    ```bash
-   tmux new-session -s mysession '/root/script -f output.txt'  # 使用script命令记录
+   tmux new-session -s mysession 'script -f /root/3d_fullres_log.txt'  # 使用script命令记录
    ```
    或在tmux会话中手动启动：
    ```bash
