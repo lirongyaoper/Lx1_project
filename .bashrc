@@ -116,13 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-#######################################################################
-export PATH=/usr/local/cuda-12.8/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64:$LD_LIBRARY_PATH
-
-#######################################################################
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/lirongyao0916/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -137,46 +130,40 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+#
+# #####################conda###################################
 
+alias condap='conda activate paddle'
+alias condad='conda deactivate'
+alias condan='conda activate nnunet'
 
+###############################################   py1   #####################################################################
 
+alias githpy1='cd /home/lirongyao0916/Projects/Py1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlpy1='cd /home/lirongyao0916/Projects/Py1_project/ &&  git pull'
+alias gitcpy1='cd /home/lirongyao0916/Projects && rm -rf ./Py1_project && git clone  git@github.com:lirongyaoper/Py1_project.git'
+#############################################   php1     ####################################################################
 
-
-
-#######################################################################################
-alias githp='cd /home/lirongyao0916/Projects/Python01/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlp='cd /home/lirongyao0916/Projects/Python01/ &&  git pull'
-alias gitcp='cd /home/lirongyao0916/Projects && rm -rf ./Python01 &&  git clone git@github.com:lirongyaoper/Python01.git'
+alias githphp1='cd /home/lirongyao0916/Projects/Php1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlphp1='cd /home/lirongyao0916/Projects/Php1_project/ &&  git pull'
+alias gitcphp1='cd /home/lirongyao0916/Projects && rm -rf ./Php1_project && git clone  git@github.com:lirongyaoper/Php1_project.git'
 
 
 alias githl='cd /home/lirongyao0916/Projects/Linux/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitll='cd /home/lirongyao0916/Projects/Linux/ &&  git pull'
 alias gitcl='cd /home/lirongyao0916/Projects && rm -rf ./Linux &&  git clone git@github.com:lirongyaoper/Linux.git'
+##############################################    C     ###################################
+alias githc1='cd /home/lirongyao0916/Projects/C1_Project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlc1='cd /home/lirongyao0916/Projects/C1_Project/ &&  git pull'
+alias gitcc1='cd /home/lirongyao0916/Projects && rm -rf ./C1_Project &&  git clone git@github.com:lirongyaoper/C1_Project.git'
 
-alias githc='cd /home/lirongyao0916/Projects/CProjects/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlc='cd /home/lirongyao0916/Projects/CProjects/ &&  git pull'
-alias gitcc='cd /home/lirongyao0916/Projects && rm -rf ./CProjects &&  git clone git@github.com:lirongyaoper/CProjects.git'
 
 
+alias githpy2='cd /home/lirongyao0916/Projects/Py2_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlpy2='cd /home/lirongyao0916/Projects/Py2_project/ &&  git pull'
+alias gitcpy2='cd /home/lirongyao0916/Projects && rm -rf ./Py2_project &&  git clone git@github.com:lirongyaoper/Py2_project.git'
+############################################################################3###########################################
 
-alias githb='cd /home/lirongyao0916/Projects/Bpython/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlb='cd /home/lirongyao0916/Projects/Bpython/ &&  git pull'
-alias gitcb='cd /home/lirongyao0916/Projects && rm -rf ./Bpython &&  git clone git@github.com:lirongyaoper/Bpython.git'
-#######################################################################################
-
-alias xod='xdg-open /mnt/data'
-alias xoln='xdg-open /mnt/lrynnunet'
-alias xon='xdg-open /home/lirongyao0916/nnunet'
-alias cdd='cd /mnt/data'
-alias cdln='cd /mnt/lrynnunet'
-alias cdn='cd /home/lirongyao0916/nnunet/'
-#############################################################################################
-
-alias condan='conda activate nnunet'
-alias condad='conda deactivate'
-##########################################################################################3
-export nnUNet_raw="/home/lirongyao0916/nnunet/nnUNet_raw"
-export nnUNet_preprocessed="/home/lirongyao0916/nnunet/nnUNet_preprocessed"
-export nnUNet_results="/home/lirongyao0916/nnunet/nnUNet_results"
-###########################################################################################
-alias nvidia='watch -n 1 nvidia-smi'
+export PATH=/usr/local/cuda-12.6/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-12.6/lib64:$LD_LIBRARY_PATH
+#####################################################################################################################3
