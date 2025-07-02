@@ -142,26 +142,29 @@ alias condan='conda activate nnunet'
 alias githpy1='cd /home/lirongyao0916/Projects/Py1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitlpy1='cd /home/lirongyao0916/Projects/Py1_project/ &&  git pull'
 alias gitcpy1='cd /home/lirongyao0916/Projects && rm -rf ./Py1_project && git clone  git@github.com:lirongyaoper/Py1_project.git'
-#############################################   php1     ####################################################################
+#############################################   Php1_project     ####################################################################
 
 alias githphp1='cd /home/lirongyao0916/Projects/Php1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitlphp1='cd /home/lirongyao0916/Projects/Php1_project/ &&  git pull'
 alias gitcphp1='cd /home/lirongyao0916/Projects && rm -rf ./Php1_project && git clone  git@github.com:lirongyaoper/Php1_project.git'
 
+############################################   Lx1_project             ################################################
+alias githlx1='cd /home/lirongyao0916/Projects/Lx1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitllx1='cd /home/lirongyao0916/Projects/Lx1_project/ &&  git pull'
+alias gitclx1='cd /home/lirongyao0916/Projects && rm -rf ./Lx1_project &&  git clone git@github.com:lirongyaoper/Lx1_project.git'
 
-alias githl='cd /home/lirongyao0916/Projects/Linux/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitll='cd /home/lirongyao0916/Projects/Linux/ &&  git pull'
-alias gitcl='cd /home/lirongyao0916/Projects && rm -rf ./Linux &&  git clone git@github.com:lirongyaoper/Linux.git'
-##############################################    C     ###################################
+
+##############################################    C1_Project    ###################################
 alias githc1='cd /home/lirongyao0916/Projects/C1_Project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitlc1='cd /home/lirongyao0916/Projects/C1_Project/ &&  git pull'
 alias gitcc1='cd /home/lirongyao0916/Projects && rm -rf ./C1_Project &&  git clone git@github.com:lirongyaoper/C1_Project.git'
 
 
-
+#####################################################    Py2_project    ################################################
 alias githpy2='cd /home/lirongyao0916/Projects/Py2_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitlpy2='cd /home/lirongyao0916/Projects/Py2_project/ &&  git pull'
 alias gitcpy2='cd /home/lirongyao0916/Projects && rm -rf ./Py2_project &&  git clone git@github.com:lirongyaoper/Py2_project.git'
+############################################################################3###########################################
 ############################################################################3###########################################
 
 export PATH=/usr/local/cuda-12.6/bin:$PATH
