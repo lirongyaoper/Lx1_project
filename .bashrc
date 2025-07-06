@@ -41,11 +41,9 @@ alias gitcpy2='cd /home/lirongyao0916/Projects && rm -rf ./Py2_project &&  git c
 
 
 ############   lryper         ############
-alias githlry='sudo i && cd /var/www/lryper.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push && exit'
-alias gitllry='sudo i && cd /var/www/lryper.com/ &&  git pull && exit'
-alias gitclry='sudo i && cd /var/www/ && rm -rf ./lryper.com &&  git clone git@github.com:lirongyaoper/lryper.com.git && exit'
-
-
+alias githlry='sudo su && cd /var/www/lryper.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push && exit'
+alias gitllry='sudo su && cd /var/www/lryper.com/ &&  git pull && exit'
+alias gitclry='sudo su && cd /var/www/ && rm -rf ./lryper.com &&  git clone git@github.com:lirongyaoper/lryper.com.git && exit'
 
 ############################################################################3###########################################
 
