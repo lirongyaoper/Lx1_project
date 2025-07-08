@@ -42,10 +42,11 @@ alias githlry='cd /home/lirongyao0916/Projects/lryper.com/ &&  git add . && git 
 alias gitllry='cd /home/lirongyao0916/Projects/lryper.com/ &&  git pull'
 alias gitclry='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./lryper.com &&  git clone git@github.com:lirongyaoper/lryper.com.git'
 
-##################       test       ########## #######
+##################       test  start     ########## #######
 alias githtes='cd /home/lirongyao0916/Projects/test.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitltes='cd /home/lirongyao0916/Projects/test.com/ &&  git pull'
 alias gitctes='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./test.com &&  git clone git@github.com:lirongyaoper/test.com.git'
+##################       test end      ########## #######
 export PATH=/usr/local/cuda-12.6/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-12.6/lib64:$LD_LIBRARY_PATH
 #####################################################################################################################3
