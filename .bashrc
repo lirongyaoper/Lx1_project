@@ -37,13 +37,15 @@ alias gitcc1='cd /home/lirongyao0916/Projects && rm -rf ./C1_Project &&  git clo
 alias githpy2='cd /home/lirongyao0916/Projects/Py2_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
 alias gitlpy2='cd /home/lirongyao0916/Projects/Py2_project/ &&  git pull'
 alias gitcpy2='cd /home/lirongyao0916/Projects && rm -rf ./Py2_project &&  git clone git@github.com:lirongyaoper/Py2_project.git'
-############################################################################3###########################################
-alias githlry='cd /home/lirongyao0916/Projects/lryper/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitllry='cd /home/lirongyao0916/Projects/lryper/ &&  git pull'
-alias gitclry='cd /home/lirongyao0916/Projects && rm -rf ./lryper &&  git clone git@github.com:lirongyaoper/lryper.git'
+#######################       lrper     ######################
+alias githlry='cd /home/lirongyao0916/Projects/lryper.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitllry='cd /home/lirongyao0916/Projects/lryper.com/ &&  git pull'
+alias gitclry='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./lryper.com &&  git clone git@github.com:lirongyaoper/lryper.com.git'
 
-############################################################################3###########################################
-
+##################       test       ########## #######
+alias githtes='cd /home/lirongyao0916/Projects/test.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitltes='cd /home/lirongyao0916/Projects/test.com/ &&  git pull'
+alias gitctes='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./test.com &&  git clone git@github.com:lirongyaoper/test.com.git'
 export PATH=/usr/local/cuda-12.6/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-12.6/lib64:$LD_LIBRARY_PATH
 #####################################################################################################################3
