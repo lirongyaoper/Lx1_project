@@ -202,6 +202,13 @@ alias gitcweb='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./webconf &&  git
 
 
 
+############      web  start     ########## #######
+alias githcs='cd /home/lirongyao0916/Projects/cs/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlcs='cd /home/lirongyao0916/Projects/cs/ &&  git pull'
+alias gitccs='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./cs &&  git clone git@github.com:lirongyaoper/cs.git'
+############      web end      ########## #######
+
+
 alias xod='xdg-open /mnt/data'
 alias xoln='xdg-open /mnt/lrynnunet'
 alias xon='xdg-open /home/lirongyao0916/nnunet'
