@@ -118,8 +118,8 @@ fi
 
 
 #######################################################################
-export PATH=/usr/local/cuda-12.8/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-12.9/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-12.9/lib64:$LD_LIBRARY_PATH
 
 #######################################################################
 
@@ -209,6 +209,16 @@ alias gitccs='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./cs.com &&  git c
 ############      cs end      ########## #######
 
 
+
+
+############      lryblog  start     ########## #######
+alias githry='cd /home/lirongyao0916/Projects/lryblog.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlry='cd /home/lirongyao0916/Projects/lryblog.com/ &&  git pull'
+alias gitcry='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./lryblog.com &&  git clone git@github.com:lirongyaoper/lryblog.com.git'
+############      lryblog end      ########## #######
+
+
+
 alias xod='xdg-open /mnt/data'
 alias xoln='xdg-open /mnt/lrynnunet'
 alias xon='xdg-open /home/lirongyao0916/nnunet'
@@ -226,4 +236,4 @@ export nnUNet_results="/home/lirongyao0916/nnunet/nnUNet_results"
 ###########################################################################################
 alias nvidia='watch -n 1 nvidia-smi'
 ###########################################################################################
-alias rt='rm -rf ~/.local/share/Trash/*'
+alias rt='sudo rm -rf ~/.local/share/Trash/*'
