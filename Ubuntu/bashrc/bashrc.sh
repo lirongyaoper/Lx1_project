@@ -219,6 +219,15 @@ alias gitcry='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./lryblog.com &&  
 
 
 
+############      pytool  start     ########## #######
+alias githpt='cd /home/lirongyao0916/Projects/pytool/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlpt='cd /home/lirongyao0916/Projects/pytool/ &&  git pull'
+alias gitcpt='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./pytool &&  git clone git@github.com:lirongyaoper/pytool.git'
+############      pytool end      ########## #######
+
+
+
+
 alias xod='xdg-open /mnt/data'
 alias xoln='xdg-open /mnt/lrynnunet'
 alias xon='xdg-open /home/lirongyao0916/nnunet'
