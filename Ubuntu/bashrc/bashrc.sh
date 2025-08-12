@@ -227,7 +227,15 @@ alias gitcpt='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./pytool &&  git c
 
 
 
+############      qd  start     ########## #######
+alias githqd='cd /home/lirongyao0916/Projects/qd/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlqd='cd /home/lirongyao0916/Projects/qd/ &&  git pull'
+alias gitcqd='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./qd &&  git clone git@github.com:lirongyaoper/qd.git'
+############      qd end      ########## #######
 
+
+
+alias xo='xdg-open'
 alias xod='xdg-open /mnt/data'
 alias xoln='xdg-open /mnt/lrynnunet'
 alias xon='xdg-open /home/lirongyao0916/nnunet'
