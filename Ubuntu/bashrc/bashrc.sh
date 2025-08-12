@@ -227,11 +227,11 @@ alias gitcpt='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./pytool &&  git c
 
 
 
-############      qd  start     ########## #######
-alias githqd='cd /home/lirongyao0916/Projects/qd/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlqd='cd /home/lirongyao0916/Projects/qd/ &&  git pull'
-alias gitcqd='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./qd &&  git clone git@github.com:lirongyaoper/qd.git'
-############      qd end      ########## #######
+############      qd.com  start     ########## #######
+alias githqd='cd /home/lirongyao0916/Projects/qd.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlqd='cd /home/lirongyao0916/Projects/qd.com/ &&  git pull'
+alias gitcqd='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./qd.com &&  git clone git@github.com:lirongyaoper/qd.com.git'
+############      qd.com end      ########## #######
 
 
 
