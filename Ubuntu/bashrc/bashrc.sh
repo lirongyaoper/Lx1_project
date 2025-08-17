@@ -234,7 +234,7 @@ alias gitcqd='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./qd.com &&  git c
 ############      qd.com end      ########## #######
 
 
-
+alias xo.='xdg-open ./'
 alias xo='xdg-open'
 alias xod='xdg-open /mnt/data'
 alias xoln='xdg-open /mnt/lrynnunet'
