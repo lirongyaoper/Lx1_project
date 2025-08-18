@@ -212,9 +212,9 @@ alias gitccs='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./cs.com &&  git c
 
 
 ############      lryblog  start     ########## #######
-alias githry='cd /home/lirongyao0916/Projects/lryblog.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlry='cd /home/lirongyao0916/Projects/lryblog.com/ &&  git pull'
-alias gitcry='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./lryblog.com &&  git clone git@github.com:lirongyaoper/lryblog.com.git'
+alias githblog='cd /home/lirongyao0916/Projects/lryblog.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlblog='cd /home/lirongyao0916/Projects/lryblog.com/ &&  git pull'
+alias gitcblog='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./lryblog.com &&  git clone git@github.com:lirongyaoper/lryblog.com.git'
 ############      lryblog end      ########## #######
 
 
