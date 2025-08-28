@@ -235,6 +235,14 @@ alias gitcqd='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./qd.com &&  git c
 ############      qd.com end      ########## #######
 
 
+
+############      qd.com  start     ########## #######
+alias githsou='cd /home/lirongyao0916/Projects/source/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlsou='cd /home/lirongyao0916/Projects/source/ &&  git pull'
+alias gitcsou='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./source &&  git clone git@github.com:lirongyaoper/source.git'
+############      qd.com end      ########## #######
+
+
 alias xo.='xdg-open ./'
 alias xo='xdg-open'
 alias xod='xdg-open /mnt/data'
