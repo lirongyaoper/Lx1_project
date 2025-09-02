@@ -243,6 +243,14 @@ alias gitcsou='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./source &&  git 
 ############      source end      ########## #######
 
 
+############      temp  start     ########## #######
+alias githtem='cd /home/lirongyao0916/Projects/temp.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitltem='cd /home/lirongyao0916/Projects/temp.com/ &&  git pull'
+alias gitctem='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./temp.com &&  git clone git@github.com:lirongyaoper/temp.com.git'
+############      temp end      ########## #######
+
+
+
 alias xo.='xdg-open ./'
 alias xo='xdg-open'
 alias xod='xdg-open /mnt/data'
