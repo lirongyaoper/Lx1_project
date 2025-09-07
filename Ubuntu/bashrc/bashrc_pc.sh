@@ -117,157 +117,142 @@ if ! shopt -oq posix; then
 fi
 
 
-#######################################################################
-export PATH=/usr/local/cuda-12.9/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-12.9/lib64:$LD_LIBRARY_PATH
-
-#######################################################################
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/lirongyao0916/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/lirongyao0916/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/lirongyao0916/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/lirongyao0916/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 
 
 
-
-
-########################################################################################
-#
-#
+############----------------------lry------------------------##################
 
 
 #############   Py1_project   ###########
-alias githpy1='cd /home/lirongyao0916/Projects/Py1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlpy1='cd /home/lirongyao0916/Projects/Py1_project/ &&  git pull'
-alias gitcpy1='cd /home/lirongyao0916/Projects && rm -rf ./Py1_project && git clone  git@github.com:lirongyaoper/Py1_project.git'
+alias githpy1='cd /home/lirongyaoper/Projects/Py1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlpy1='cd /home/lirongyaoper/Projects/Py1_project/ &&  git pull'
+alias gitcpy1='cd /home/lirongyaoper/Projects && rm -rf ./Py1_project && git clone  git@github.com:lirongyaoper/Py1_project.git'
 
 
 ################    Py2_project    ##################
-alias githpy2='cd /home/lirongyao0916/Projects/Py2_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlpy2='cd /home/lirongyao0916/Projects/Py2_project/ &&  git pull'
-alias gitcpy2='cd /home/lirongyao0916/Projects && rm -rf ./Py2_project &&  git clone git@github.com:lirongyaoper/Py2_project.git'
+alias githpy2='cd /home/lirongyaoper/Projects/Py2_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlpy2='cd /home/lirongyaoper/Projects/Py2_project/ &&  git pull'
+alias gitcpy2='cd /home/lirongyaoper/Projects && rm -rf ./Py2_project &&  git clone git@github.com:lirongyaoper/Py2_project.git'
 ##############    py2_project   end  ################
 
 
 ##########        Php1_project     ###################
-alias githphp1='cd /home/lirongyao0916/Projects/Php1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlphp1='cd /home/lirongyao0916/Projects/Php1_project/ &&  git pull'
-alias gitcphp1='cd /home/lirongyao0916/Projects && rm -rf ./Php1_project && git clone  git@github.com:lirongyaoper/Php1_project.git'
+alias githphp1='cd /home/lirongyaoper/Projects/Php1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlphp1='cd /home/lirongyaoper/Projects/Php1_project/ &&  git pull'
+alias gitcphp1='cd /home/lirongyaoper/Projects && rm -rf ./Php1_project && git clone  git@github.com:lirongyaoper/Php1_project.git'
 
 
 ###############   Lx1_project     ################
-alias githlx1='cd /home/lirongyao0916/Projects/Lx1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitllx1='cd /home/lirongyao0916/Projects/Lx1_project/ &&  git pull'
-alias gitclx1='cd /home/lirongyao0916/Projects && rm -rf ./Lx1_project &&  git clone git@github.com:lirongyaoper/Lx1_project.git'
+alias githlx1='cd /home/lirongyaoper/Projects/Lx1_project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitllx1='cd /home/lirongyaoper/Projects/Lx1_project/ &&  git pull'
+alias gitclx1='cd /home/lirongyaoper/Projects && rm -rf ./Lx1_project &&  git clone git@github.com:lirongyaoper/Lx1_project.git'
 
 
 ############   #    C1_Project  ##################
-alias githc1='cd /home/lirongyao0916/Projects/C1_Project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlc1='cd /home/lirongyao0916/Projects/C1_Project/ &&  git pull'
-alias gitcc1='cd /home/lirongyao0916/Projects && rm -rf ./C1_Project &&  git clone git@github.com:lirongyaoper/C1_Project.git'
+alias githc1='cd /home/lirongyaoper/Projects/C1_Project/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlc1='cd /home/lirongyaoper/Projects/C1_Project/ &&  git pull'
+alias gitcc1='cd /home/lirongyaoper/Projects && rm -rf ./C1_Project &&  git clone git@github.com:lirongyaoper/C1_Project.git'
 
 
 
 #############      lryper   start   #################
-alias githper='cd /home/lirongyao0916/Projects/lryper.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlper='cd /home/lirongyao0916/Projects/lryper.com/ &&  git pull'
-alias gitcper='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./lryper.com &&  git clone git@github.com:lirongyaoper/lryper.com.git'
+alias githper='cd /home/lirongyaoper/Projects/lryper.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlper='cd /home/lirongyaoper/Projects/lryper.com/ &&  git pull'
+alias gitcper='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./lryper.com &&  git clone git@github.com:lirongyaoper/lryper.com.git'
 
 #############     lryper  end       ################
 
 
 ############      test  start     ########## #######
-alias githtes='cd /home/lirongyao0916/Projects/test.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitltes='cd /home/lirongyao0916/Projects/test.com/ &&  git pull'
-alias gitctes='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./test.com &&  git clone git@github.com:lirongyaoper/test.com.git'
+alias githtes='cd /home/lirongyaoper/Projects/test.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitltes='cd /home/lirongyaoper/Projects/test.com/ &&  git pull'
+alias gitctes='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./test.com &&  git clone git@github.com:lirongyaoper/test.com.git'
 ##################       test end      ########## #######
 
 
 ############      web  start     ########## #######
-alias githweb='cd /home/lirongyao0916/Projects/webconf/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlweb='cd /home/lirongyao0916/Projects/webconf/ &&  git pull'
-alias gitcweb='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./webconf &&  git clone git@github.com:lirongyaoper/webconf.git'
+alias githweb='cd /home/lirongyaoper/Projects/webconf/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlweb='cd /home/lirongyaoper/Projects/webconf/ &&  git pull'
+alias gitcweb='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./webconf &&  git clone git@github.com:lirongyaoper/webconf.git'
 ############      web end      ########## #######
 
 
 
 ############      cs  start     ########## #######
-alias githcs='cd /home/lirongyao0916/Projects/cs.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlcs='cd /home/lirongyao0916/Projects/cs.com/ &&  git pull'
-alias gitccs='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./cs.com &&  git clone git@github.com:lirongyaoper/cs.com.git'
+alias githcs='cd /home/lirongyaoper/Projects/cs.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlcs='cd /home/lirongyaoper/Projects/cs.com/ &&  git pull'
+alias gitccs='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./cs.com &&  git clone git@github.com:lirongyaoper/cs.com.git'
 ############      cs end      ########## #######
 
 
 
 
 ############      lryblog  start     ########## #######
-alias githblog='cd /home/lirongyao0916/Projects/lryblog.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlblog='cd /home/lirongyao0916/Projects/lryblog.com/ &&  git pull'
-alias gitcblog='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./lryblog.com &&  git clone git@github.com:lirongyaoper/lryblog.com.git'
+alias githblog='cd /home/lirongyaoper/Projects/lryblog.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlblog='cd /home/lirongyaoper/Projects/lryblog.com/ &&  git pull'
+alias gitcblog='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./lryblog.com &&  git clone git@github.com:lirongyaoper/lryblog.com.git'
 ############      lryblog end      ########## #######
 
 
 
 ############      pytool  start     ########## #######
-alias githpt='cd /home/lirongyao0916/Projects/pytool/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlpt='cd /home/lirongyao0916/Projects/pytool/ &&  git pull'
-alias gitcpt='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./pytool &&  git clone git@github.com:lirongyaoper/pytool.git'
+alias githpt='cd /home/lirongyaoper/Projects/pytool/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlpt='cd /home/lirongyaoper/Projects/pytool/ &&  git pull'
+alias gitcpt='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./pytool &&  git clone git@github.com:lirongyaoper/pytool.git'
 ############      pytool end      ########## #######
 
 
 
 ############      qd.com  start     ########## #######
-alias githqd='cd /home/lirongyao0916/Projects/qd.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlqd='cd /home/lirongyao0916/Projects/qd.com/ &&  git pull'
-alias gitcqd='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./qd.com &&  git clone git@github.com:lirongyaoper/qd.com.git'
+alias githqd='cd /home/lirongyaoper/Projects/qd.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlqd='cd /home/lirongyaoper/Projects/qd.com/ &&  git pull'
+alias gitcqd='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./qd.com &&  git clone git@github.com:lirongyaoper/qd.com.git'
 ############      qd.com end      ########## #######
 
 
 
 ############      source  start     ########## #######
-alias githsou='cd /home/lirongyao0916/Projects/source/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitlsou='cd /home/lirongyao0916/Projects/source/ &&  git pull'
-alias gitcsou='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./source &&  git clone git@github.com:lirongyaoper/source.git'
+alias githsou='cd /home/lirongyaoper/Projects/source/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlsou='cd /home/lirongyaoper/Projects/source/ &&  git pull'
+alias gitcsou='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./source &&  git clone git@github.com:lirongyaoper/source.git'
 ############      source end      ########## #######
 
 
 ############      temp  start     ########## #######
-alias githtem='cd /home/lirongyao0916/Projects/temp.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
-alias gitltem='cd /home/lirongyao0916/Projects/temp.com/ &&  git pull'
-alias gitctem='cd /home/lirongyao0916/Projects/ && sudo rm -rf ./temp.com &&  git clone git@github.com:lirongyaoper/temp.com.git'
+alias githtem='cd /home/lirongyaoper/Projects/temp.com/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitltem='cd /home/lirongyaoper/Projects/temp.com/ &&  git pull'
+alias gitctem='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./temp.com &&  git clone git@github.com:lirongyaoper/temp.com.git'
 ############      temp end      ########## #######
 
 
 
 alias xo.='xdg-open ./'
 alias xo='xdg-open'
-alias xod='xdg-open /mnt/data'
+alias xold='xdg-open /mnt/lrydata'
 alias xoln='xdg-open /mnt/lrynnunet'
-alias xon='xdg-open /home/lirongyao0916/nnunet'
-alias cdd='cd /mnt/data'
+alias xon='xdg-open /home/lirongyaoper/nnunet'
+alias cdld='cd /mnt/lrydata'
 alias cdln='cd /mnt/lrynnunet'
-alias cdn='cd /home/lirongyao0916/nnunet/'
+alias cdn='cd /home/lirongyaoper/nnunet/'
 #############################################################################################
 
 alias condan='conda activate nnunet'
 alias condad='conda deactivate'
 ##########################################################################################3
-export nnUNet_raw="/home/lirongyao0916/nnunet/nnUNet_raw"
-export nnUNet_preprocessed="/home/lirongyao0916/nnunet/nnUNet_preprocessed"
-export nnUNet_results="/home/lirongyao0916/nnunet/nnUNet_results"
+export nnUNet_raw="/home/lirongyaoper/nnunet/nnUNet_raw"
+export nnUNet_preprocessed="/home/lirongyaoper/nnunet/nnUNet_preprocessed"
+export nnUNet_results="/home/lirongyaoper/nnunet/nnUNet_results"
 ###########################################################################################
 alias nvidia='watch -n 1 nvidia-smi'
+alias freeh='watch -n 2 free -h'
 ###########################################################################################
 alias rt='sudo rm -rf ~/.local/share/Trash/*'
+
+
+
+######----------------------cuda---------- #######################
+export PATH=/usr/local/cuda-13.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-13.0/lib64:$LD_LIBRARY_PATH
+
+######----------------------cuda---------- #######################
