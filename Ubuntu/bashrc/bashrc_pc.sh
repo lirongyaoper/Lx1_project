@@ -119,6 +119,32 @@ fi
 
 
 
+# >>> conda initialize >>>      ----------------lryconda-start-------------------------
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/lirongyaoper/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/lirongyaoper/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/lirongyaoper/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/lirongyaoper/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<   ----------------lryconda-end-------------------------
+
+
+
+
+
+######----------------------lry-cuda---------- #######################
+export PATH=/usr/local/cuda-12.8/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64:$LD_LIBRARY_PATH
+export CUDA_HOME=/usr/local/cuda-12.8
+######----------------------lry-cuda---------- #######################
+
+
 
 
 ############----------------------lry------------------------##################
@@ -226,6 +252,13 @@ alias gitctem='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./temp.com &&  git
 ############      temp end      ########## #######
 
 
+############      progress  start     ########## #######
+alias githpro='cd /home/lirongyaoper/Projects/progress/ &&  git add . && git commit -m "update data at $(date +%Y%m%d%H%M%S)" && git push'
+alias gitlpro='cd /home/lirongyaoper/Projects/progress/ &&  git pull'
+alias gitcpro='cd /home/lirongyaoper/Projects/ && sudo rm -rf ./progress &&  git clone git@github.com:lirongyaoper/progress.git'
+############      progress end      ########## #######
+
+
 
 alias xo.='xdg-open ./'
 alias xo='xdg-open'
@@ -235,7 +268,14 @@ alias xon='xdg-open /home/lirongyaoper/nnunet'
 alias cdld='cd /mnt/lrydata'
 alias cdln='cd /mnt/lrynnunet'
 alias cdn='cd /home/lirongyaoper/nnunet/'
+alias cdd='cd /home/lirongyaoper/Downloads/'
+alias xod='xdg-open /home/lirongyaoper/Downloads/'
+alias cdp='cd /home/lirongyaoper/Projects/'
+alias xop='xdg-open /home/lirongyaoper/Projects/'
+alias cds='cd /home/lirongyaoper/Softwares/'
+alias xos='xdg-open /home/lirongyaoper/Softwares/'
 #############################################################################################
+
 
 alias condan='conda activate nnunet'
 alias condad='conda deactivate'
@@ -250,9 +290,3 @@ alias freeh='watch -n 2 free -h'
 alias rt='sudo rm -rf ~/.local/share/Trash/*'
 
 
-
-######----------------------cuda---------- #######################
-export PATH=/usr/local/cuda-13.0/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-13.0/lib64:$LD_LIBRARY_PATH
-
-######----------------------cuda---------- #######################
