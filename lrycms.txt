@@ -1,0 +1,10 @@
+---> 账号:lrycms-VLESS_TCP/TLS_Vision 
+
+ ---> 通用格式(VLESS+TCP+TLS_Vision) 
+    vless://660331ec-e91e-4cc5-80e8-fa4915e188e5@www.lrycms.com:443?encryption=none&security=tls&fp=chrome&type=tcp&host=www.lrycms.com&headerType=none&sni=www.lrycms.com&flow=xtls-rprx-vision#lrycms-VLESS_TCP/TLS_Vision
+ 
+ ---> 格式化明文(VLESS+TCP+TLS_Vision) 
+协议类型:VLESS，地址:www.lrycms.com，端口:443，用户ID:660331ec-e91e-4cc5-80e8-fa4915e188e5，安全:tls，client-fingerprint: chrome，传输方式:tcp，flow:xtls-rprx-vision，账户名:lrycms-VLESS_TCP/TLS_Vision
+ 
+ ---> 二维码 VLESS(VLESS+TCP+TLS_Vision) 
+    https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=vless%3A%2F%2F660331ec-e91e-4cc5-80e8-fa4915e188e5%40www.lrycms.com%3A443%3Fencryption%3Dnone%26fp%3Dchrome%26security%3Dtls%26type%3Dtcp%26www.lrycms.com%3Dwww.lrycms.com%26headerType%3Dnone%26sni%3Dwww.lrycms.com%26flow%3Dxtls-rprx-vision%23lrycms-VLESS_TCP/TLS_Vision
