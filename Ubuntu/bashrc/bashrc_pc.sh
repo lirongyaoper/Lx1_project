@@ -280,9 +280,9 @@ alias xos='xdg-open /home/lirongyaoper/Softwares/'
 alias condan='conda activate nnunet'
 alias condad='conda deactivate'
 ##########################################################################################3
-export nnUNet_raw="/home/lirongyaoper/nnunet/nnUNet_raw"
-export nnUNet_preprocessed="/home/lirongyaoper/nnunet/nnUNet_preprocessed"
-export nnUNet_results="/home/lirongyaoper/nnunet/nnUNet_results"
+export nnUNet_raw="/home/lirongyaoper/Documents/nnunet/nnUNet_raw"
+export nnUNet_preprocessed="/home/lirongyaoper/Documents/nnunet/nnUNet_preprocessed"
+export nnUNet_results="/home/lirongyaoper/Documents/nnunet/nnUNet_results"
 ###########################################################################################
 alias nvidia='watch -n 1 nvidia-smi'
 alias freeh='watch -n 2 free -h'
