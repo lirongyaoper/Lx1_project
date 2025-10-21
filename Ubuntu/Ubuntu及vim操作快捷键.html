@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Ubuntu及vim操作快捷键</title>
+</head>
+<body><p>以下是 Ubuntu 终端快捷键与 Linux Vim 编辑器的快捷键详解及对比，内容分模块整理，便于快速查阅：</p>
+<hr />
+<h3 id='一ubuntu-终端常用快捷键'><strong>一、Ubuntu 终端常用快捷键</strong></h3>
+<p>主要用于提高命令行操作效率，适用于 Bash/Zsh 等 Shell 环境。</p>
+<h4 id='1-光标操作'><strong>1. 光标操作</strong></h4>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>快捷键</th><th>功能描述</th></tr></thead>
+<tbody><tr><td><code>Ctrl + A</code></td><td>移动光标到行首</td></tr><tr><td><code>Ctrl + E</code></td><td>移动光标到行尾</td></tr><tr><td><code>Alt + B</code></td><td>向后移动一个单词（单词级左移）</td></tr><tr><td><code>Alt + F</code></td><td>向前移动一个单词（单词级右移）</td></tr><tr><td><code>Ctrl + ←/→</code></td><td>按单词左右跳转（部分终端支持）</td></tr></tbody>
+</table></figure>
+<h4 id='2-编辑与历史'><strong>2. 编辑与历史</strong></h4>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>快捷键</th><th>功能描述</th></tr></thead>
+<tbody><tr><td><code>Ctrl + U</code></td><td>删除从光标到行首的内容</td></tr><tr><td><code>Ctrl + K</code></td><td>删除从光标到行尾的内容</td></tr><tr><td><code>Ctrl + W</code></td><td>删除前一个单词</td></tr><tr><td><code>Ctrl + C</code></td><td>终止当前命令/进程</td></tr><tr><td><code>Ctrl + Z</code></td><td>挂起当前进程（<code>fg</code> 恢复）</td></tr><tr><td><code>Ctrl + R</code></td><td>反向搜索历史命令</td></tr><tr><td><code>Ctrl + L</code></td><td>清屏（类似 <code>clear</code> 命令）</td></tr><tr><td><code>!!</code></td><td>重复上一条命令</td></tr><tr><td><code>!&lt;前缀&gt;</code></td><td>执行最近以指定前缀开头的命令</td></tr></tbody>
+</table></figure>
+<h4 id='3-补全与多任务'><strong>3. 补全与多任务</strong></h4>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>快捷键</th><th>功能描述</th></tr></thead>
+<tbody><tr><td><code>Tab</code></td><td>自动补全文件/命令/路径</td></tr><tr><td><code>Ctrl + D</code></td><td>退出终端或发送 EOF 信号</td></tr><tr><td><code>Ctrl + S</code></td><td>暂停终端输出（冻结）</td></tr><tr><td><code>Ctrl + Q</code></td><td>恢复终端输出（解冻）</td></tr></tbody>
+</table></figure>
+<hr />
+<h3 id='二vim-编辑器快捷键'><strong>二、Vim 编辑器快捷键</strong></h3>
+<p>Vim 分不同模式，需注意当前模式（<strong>普通模式</strong>、<strong>插入模式</strong>、<strong>可视模式</strong>、<strong>命令模式</strong>）。</p>
+<h4 id='1-模式切换'><strong>1. 模式切换</strong></h4>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>快捷键</th><th>功能描述</th></tr></thead>
+<tbody><tr><td><code>i</code></td><td>进入插入模式（光标前插入）</td></tr><tr><td><code>a</code></td><td>进入插入模式（光标后插入）</td></tr><tr><td><code>o</code></td><td>在当前行下方插入新行</td></tr><tr><td><code>O</code></td><td>在当前行上方插入新行</td></tr><tr><td><code>Esc</code></td><td>返回普通模式</td></tr><tr><td><code>:</code></td><td>进入命令模式</td></tr></tbody>
+</table></figure>
+<h4 id='2-普通模式操作'><strong>2. 普通模式操作</strong></h4>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>快捷键</th><th>功能描述</th></tr></thead>
+<tbody><tr><td><code>h/j/k/l</code></td><td>左/下/上/右移动光标</td></tr><tr><td><code>w</code> / <code>b</code></td><td>向前/向后跳转一个单词</td></tr><tr><td><code>0</code> / <code>$</code></td><td>跳转到行首/行尾</td></tr><tr><td><code>gg</code> / <code>G</code></td><td>跳转到文件首行/末行</td></tr><tr><td><code>Ctrl + F/B</code></td><td>向前/向后翻页</td></tr><tr><td><code>dd</code></td><td>删除当前行</td></tr><tr><td><code>yy</code></td><td>复制当前行</td></tr><tr><td><code>p</code> / <code>P</code></td><td>粘贴到光标后/前</td></tr><tr><td><code>u</code></td><td>撤销操作</td></tr><tr><td><code>Ctrl + R</code></td><td>重做操作</td></tr><tr><td><code>/文本</code></td><td>向下搜索文本</td></tr><tr><td><code>?文本</code></td><td>向上搜索文本</td></tr><tr><td><code>:%s/old/new/g</code></td><td>全局替换文本</td></tr></tbody>
+</table></figure>
+<h4 id='3-可视模式操作'><strong>3. 可视模式操作</strong></h4>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>快捷键</th><th>功能描述</th></tr></thead>
+<tbody><tr><td><code>v</code></td><td>进入字符可视模式</td></tr><tr><td><code>V</code></td><td>进入行可视模式</td></tr><tr><td><code>Ctrl + V</code></td><td>进入块可视模式</td></tr><tr><td>选中后按 <code>d</code></td><td>删除选中内容</td></tr><tr><td>选中后按 <code>y</code></td><td>复制选中内容</td></tr></tbody>
+</table></figure>
+<h4 id='4-命令模式操作'><strong>4. 命令模式操作</strong></h4>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>命令</th><th>功能描述</th></tr></thead>
+<tbody><tr><td><code>:w</code></td><td>保存文件</td></tr><tr><td><code>:q</code></td><td>退出 Vim</td></tr><tr><td><code>:q!</code></td><td>强制退出不保存</td></tr><tr><td><code>:wq</code> / <code>:x</code></td><td>保存并退出</td></tr><tr><td><code>:set nu</code></td><td>显示行号</td></tr><tr><td><code>:行号</code></td><td>跳转到指定行</td></tr></tbody>
+</table></figure>
+<hr />
+<h3 id='三终端与-vim-快捷键对比'><strong>三、终端与 Vim 快捷键对比</strong></h3>
+<figure class='table-figure'><table>
+<thead>
+<tr><th><strong>类别</strong></th><th><strong>终端快捷键</strong></th><th><strong>Vim 快捷键</strong></th><th><strong>对比说明</strong></th></tr></thead>
+<tbody><tr><td><strong>光标移动</strong></td><td><code>Ctrl + A/E</code> 跳转行首/尾</td><td><code>0/$</code> 跳转行首/尾</td><td>终端更依赖组合键，Vim 用单键符号</td></tr><tr><td><strong>删除操作</strong></td><td><code>Ctrl + U/K</code> 删除行首/尾</td><td><code>dd</code> 删除整行</td><td>终端按区域删除，Vim 按行/块操作</td></tr><tr><td><strong>历史操作</strong></td><td><code>Ctrl + R</code> 搜索历史命令</td><td><code>q:</code> 查看命令历史</td><td>终端直接搜索，Vim 需进入历史模式</td></tr><tr><td><strong>进程控制</strong></td><td><code>Ctrl + C/Z</code> 终止/挂起进程</td><td>Vim 无直接对应操作</td><td>终端面向进程，Vim 专注文本编辑</td></tr><tr><td><strong>模式切换</strong></td><td>无模式概念</td><td><code>Esc</code> 返回普通模式</td><td>Vim 需频繁切换模式，终端无此设计</td></tr><tr><td><strong>复制粘贴</strong></td><td>依赖鼠标或 <code>Shift</code> 组合键</td><td><code>yy/p</code> 纯键盘操作</td><td>Vim 完全键盘驱动，终端依赖外部操作</td></tr></tbody>
+</table></figure>
+<hr />
+<h3 id='四使用建议'><strong>四、使用建议</strong></h3>
+<ol start='' >
+<li><strong>终端快捷键</strong>：适合快速执行命令、管理进程、补全路径。</li>
+<li><strong>Vim 快捷键</strong>：需熟悉模式切换，通过组合键高效编辑文本。</li>
+<li><strong>注意冲突</strong>：如 <code>Ctrl + C</code> 在终端用于终止进程，在 Vim 普通模式下可能触发命令（需配置或按 <code>Esc</code> 确保模式正确）。</li>
+
+</ol>
+<p>掌握这些快捷键可显著提升 Linux 环境下的操作效率。建议逐步练习，形成肌肉记忆。</p>
+</body>
+</html>
