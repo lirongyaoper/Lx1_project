@@ -34,6 +34,7 @@ declare -a project_order=(
     "study.com"
     "nnunet"
     "lryblogdocument"
+    "js"
 )
 
 # 定义项目的git仓库地址
@@ -56,6 +57,7 @@ declare -A git_repos=(
     ["study.com"]="git@github.com:lirongyaoper/study.com.git"
     ["nnunet"]="git@github.com:lirongyaoper/nnunet.git"
     ["lryblogdocument"]="git@github.com:lirongyaoper/lryblogdocument.git"
+    ["js"]="git@github.com:lirongyaoper/js.git"
 )
 
 # 存储选中的项目
