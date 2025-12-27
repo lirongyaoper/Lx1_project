@@ -26,6 +26,7 @@ declare -a project_order=(
     "webconf"
     "cs.com"
     "lryblog.com"
+     "lryblogdocument"   
     "pytool"
     "qd.com"
     "source"
@@ -33,7 +34,6 @@ declare -a project_order=(
     "progress"
     "study.com"
     "nnunet"
-    "lryblogdocument"
     "js"
 )
 
@@ -49,6 +49,7 @@ declare -A git_repos=(
     ["webconf"]="git@github.com:lirongyaoper/webconf.git"
     ["cs.com"]="git@github.com:lirongyaoper/cs.com.git"
     ["lryblog.com"]="git@github.com:lirongyaoper/lryblog.com.git"
+    ["lryblogdocument"]="git@github.com:lirongyaoper/lryblogdocument.git"    
     ["pytool"]="git@github.com:lirongyaoper/pytool.git"
     ["qd.com"]="git@github.com:lirongyaoper/qd.com.git"
     ["source"]="git@github.com:lirongyaoper/source.git"
@@ -56,8 +57,7 @@ declare -A git_repos=(
     ["progress"]="git@github.com:lirongyaoper/progress.git"
     ["study.com"]="git@github.com:lirongyaoper/study.com.git"
     ["nnunet"]="git@github.com:lirongyaoper/nnunet.git"
-    ["lryblogdocument"]="git@github.com:lirongyaoper/lryblogdocument.git"
-    ["js"]="git@github.com:lirongyaoper/js.git"
+    ["js"]="git@github.com:lirongyaoper/js.git"    
 )
 
 # 存储选中的项目
