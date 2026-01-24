@@ -26,12 +26,16 @@ declare -a project_order=(
     "webconf"
     "cs.com"
     "lryblog.com"
+    "lryblogdocument"   
     "pytool"
     "qd.com"
     "source"
     "temp.com"
     "progress"
     "study.com"
+    "nnunet"
+    "js"
+    "yzm.com"
 )
 
 # 定义项目的git仓库地址
@@ -46,13 +50,18 @@ declare -A git_repos=(
     ["webconf"]="git@github.com:lirongyaoper/webconf.git"
     ["cs.com"]="git@github.com:lirongyaoper/cs.com.git"
     ["lryblog.com"]="git@github.com:lirongyaoper/lryblog.com.git"
+    ["lryblogdocument"]="git@github.com:lirongyaoper/lryblogdocument.git"    
     ["pytool"]="git@github.com:lirongyaoper/pytool.git"
     ["qd.com"]="git@github.com:lirongyaoper/qd.com.git"
     ["source"]="git@github.com:lirongyaoper/source.git"
     ["temp.com"]="git@github.com:lirongyaoper/temp.com.git"
     ["progress"]="git@github.com:lirongyaoper/progress.git"
     ["study.com"]="git@github.com:lirongyaoper/study.com.git"
+    ["nnunet"]="git@github.com:lirongyaoper/nnunet.git"
+    ["js"]="git@github.com:lirongyaoper/js.git"
+    ["yzm.com"]="git@github.com:lirongyaoper/yzm.com.git"    
 )
+
 
 # 存储选中的项目
 declare -a selected_projects=()
