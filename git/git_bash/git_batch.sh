@@ -11,8 +11,8 @@ CYAN='\033[0;36m'
 MAGENTA='\033[0;35m'
 NC='\033[0m' # No Color
 
-# 基础项目路径
-BASE_PATH="/home/lirongyao0916/Projects"
+# 基础项目路径（自动检测当前用户）
+BASE_PATH="${HOME}/Projects"
 
 # 定义项目列表
 declare -a project_order=(
@@ -65,6 +65,31 @@ declare -A git_repos=(
 
 # 存储选中的项目
 declare -a selected_projects=()
+
+# 前置检查
+check_prerequisites() {
+    local has_error=false
+    
+    # 检查git是否安装
+    if ! command -v git >/dev/null 2>&1; then
+        echo -e "${RED}错误: 未安装git，请先安装git${NC}"
+        has_error=true
+    fi
+    
+    # 检查基础路径是否存在
+    if [ ! -d "$BASE_PATH" ]; then
+        echo -e "${YELLOW}警告: 基础路径不存在，将尝试创建: $BASE_PATH${NC}"
+        mkdir -p "$BASE_PATH" 2>/dev/null || {
+            echo -e "${RED}错误: 无法创建目录 $BASE_PATH${NC}"
+            has_error=true
+        }
+    fi
+    
+    if $has_error; then
+        echo -e "${RED}环境检查失败，程序退出${NC}"
+        exit 1
+    fi
+}
 
 # 清屏函数
 clear_screen() {
@@ -263,14 +288,44 @@ execute_operations() {
             "push")
                 if [ -d "$project_path" ]; then
                     echo "进入目录: $project_path"
-                    cd "$project_path"
+                    cd "$project_path" || {
+                        echo -e "${RED}✗ 无法进入目录${NC}"
+                        ((fail_count++))
+                        failed_projects+=("$project")
+                        continue
+                    }
+                    
+                    # 检查是否是git仓库
+                    if [ ! -d ".git" ]; then
+                        echo -e "${RED}✗ 不是git仓库${NC}"
+                        ((fail_count++))
+                        failed_projects+=("$project")
+                        continue
+                    fi
+                    
+                    # 检查是否有改动
+                    if git diff-index --quiet HEAD -- 2>/dev/null && [ -z "$(git status --porcelain)" ]; then
+                        echo -e "${YELLOW}没有需要提交的改动，跳过${NC}"
+                        ((success_count++))
+                        continue
+                    fi
                     
                     echo "执行: git add ."
-                    git add .
+                    git add . || {
+                        echo -e "${RED}✗ git add 失败${NC}"
+                        ((fail_count++))
+                        failed_projects+=("$project")
+                        continue
+                    }
                     
-                    commit_msg="update data at $(date +%Y%m%d%H%M%S)"
+                    commit_msg="update at $(date +'%Y-%m-%d %H:%M:%S')"
                     echo "执行: git commit -m \"$commit_msg\""
-                    git commit -m "$commit_msg"
+                    if ! git commit -m "$commit_msg"; then
+                        echo -e "${RED}✗ git commit 失败${NC}"
+                        ((fail_count++))
+                        failed_projects+=("$project")
+                        continue
+                    fi
                     
                     echo "执行: git push"
                     if git push; then
@@ -291,7 +346,54 @@ execute_operations() {
             "pull")
                 if [ -d "$project_path" ]; then
                     echo "进入目录: $project_path"
-                    cd "$project_path"
+                    cd "$project_path" || {
+                        echo -e "${RED}✗ 无法进入目录${NC}"
+                        ((fail_count++))
+                        failed_projects+=("$project")
+                        continue
+                    }
+                    
+                    # 检查是否是git仓库
+                    if [ ! -d ".git" ]; then
+                        echo -e "${RED}✗ 不是git仓库${NC}"
+                        ((fail_count++))
+                        failed_projects+=("$project")
+                        continue
+                    fi
+                    
+                    # 检查是否有本地修改
+                    if [ -n "$(git status --porcelain)" ]; then
+                        echo -e "${YELLOW}警告: 检测到本地有修改,准备放弃本地所有修改${NC}"
+                        git status --short
+                        
+                        # 1. 检查是否有暂存的文件(git add过的)
+                        if [ -n "$(git diff --cached --name-only)" ]; then
+                            echo "执行: git reset HEAD (取消暂存)"
+                            git reset HEAD || {
+                                echo -e "${RED}✗ 取消暂存失败${NC}"
+                                ((fail_count++))
+                                failed_projects+=("$project")
+                                continue
+                            }
+                        fi
+                        
+                        # 2. 放弃所有本地修改
+                        echo "执行: git checkout -- . (放弃所有本地修改)"
+                        git checkout -- . || {
+                            echo -e "${RED}✗ 放弃本地修改失败${NC}"
+                            ((fail_count++))
+                            failed_projects+=("$project")
+                            continue
+                        }
+                        
+                        # 3. 清理未跟踪的文件和目录
+                        echo "执行: git clean -fd (清理未跟踪的文件)"
+                        git clean -fd || {
+                            echo -e "${YELLOW}警告: 清理未跟踪文件失败${NC}"
+                        }
+                        
+                        echo -e "${GREEN}✓ 已放弃所有本地修改${NC}"
+                    fi
                     
                     echo "执行: git pull"
                     if git pull; then
@@ -318,8 +420,15 @@ execute_operations() {
                     echo -e "${YELLOW}警告: 目录已存在 - $project${NC}"
                     read -p "是否删除并重新克隆？[y/n]: " overwrite
                     if [[ $overwrite == "y" || $overwrite == "Y" ]]; then
+                        # 安全检查：防止删除重要目录
+                        if [ -z "$project" ] || [ "$project" = "/" ] || [ "$project" = "." ] || [ "$project" = ".." ]; then
+                            echo -e "${RED}✗ 错误：无效的项目名，拒绝删除${NC}"
+                            ((fail_count++))
+                            failed_projects+=("$project")
+                            continue
+                        fi
                         echo "删除已存在的目录: $project"
-                        sudo rm -rf "./$project"
+                        rm -rf "./$project"
                     else
                         echo -e "${YELLOW}跳过 ${project}${NC}"
                         continue
@@ -338,9 +447,6 @@ execute_operations() {
                 fi
                 ;;
         esac
-        
-        # 等待命令完全执行完毕
-        wait
         
         echo "────────────────────────────────────"
     done
@@ -371,6 +477,9 @@ execute_operations() {
 
 # 主程序
 main() {
+    # 执行前置检查
+    check_prerequisites
+    
     while true; do
         clear_screen
         
